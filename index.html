@@ -2,17 +2,23 @@
 <html>
 <head>
     <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js" type="text/javascript"></script>
 </head>
 <header>
     <nav>
         <div class = "navbar-sect navbar-left">
-            <span class="navbar-item"> item </span>
-            <span class="navbar-item"> item </span>
-            <span class="navbar-item"> item </span>
+            <a href="index.html"><span class="navbar-item logo"> RM </span></a>
         </div>
 
-        <div class = "navbar-sect navbar-right">
-            <span class="navbar-item"> item-right </span>
+        <div id = "top-navbar-right" class = "navbar-sect navbar-right">
+            <a href="index.html"><span class="navbar-item navbar-right-link"> About </span></a>
+            <span class="navbar-item navbar-right-link"> item </span>
+            <span class="navbar-item navbar-right-link"> item </span>
+            <a href="javascript:void(0);" id="icon-toggle" onclick="myFunction()">
+                <span class ="navbar-item icon"><i id="icon-symbol" class="fa fa-bars"></i></span>
+            </a>
         </div>
     </nav>
 </header>
