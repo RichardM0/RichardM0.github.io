@@ -1,8 +1,46 @@
-head{
+body{
+    margin:0px;
+}
+header{
     justify-content:center;
     align-items:center;
     display:flex;
+    height:10%;
+    column-gap:25px;
+    margin:0px;
+    background-color:black;
 }
 nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width:100%;
+    height:100%;
+    color:white;
+}
+.navbar-sect{
+    height:100%;
+    display:flex;
+    flex-direction:row;
+    column-gap:80px;
+}
+.navbar-left{
     float:left;
+    margin-left:20px;
+}
+.navbar-right{
+    float:right;
+    margin-right:20px;
+}
+.navbar-item{  
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    text-align:center;
+}
+.logo{
+    position:relative;
+    width:min-content;
+    left:50%;
 }
