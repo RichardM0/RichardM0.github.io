@@ -1,13 +1,12 @@
 body{
-    margin:0px;
+    margin:0;
 }
 header{
     justify-content:center;
     align-items:center;
     display:flex;
     height:10%;
-    column-gap:25px;
-    margin:0px;
+    margin:0;
     background-color:black;
 }
 nav{
@@ -23,15 +22,15 @@ nav{
     height:100%;
     display:flex;
     flex-direction:row;
-    column-gap:80px;
+    column-gap:5vw;
 }
 .navbar-left{
     float:left;
-    margin-left:2%;
+    margin-left:2vw;
 }
 .navbar-right{
     float:right;
-    margin-right:1%;
+    margin-right:1vw;
 }
 .navbar-item{  
     height:100%;
@@ -39,16 +38,16 @@ nav{
     flex-direction:row;
     align-items:center;
     text-align:center;
-    font-size:1.5vw;
+    font-size:2.5vw;
 }
 
 .navbar-right .icon{
-    font-size:2vw;
+    font-size:2.5vw;
     display:none;
 
 }
 .logo{
-    font-size: 2.67vw;
+    font-size: 4vw;
 }
 a{
     color:white;
@@ -62,21 +61,21 @@ a{
     width:100%;
     display:flex;
     flex-direction:column;
-    row-gap:20px;
+    row-gap:1vw;
 
 }
 
 .vertical-navbar .navbar-item{
-    margin-top:15px;
+    margin-top:1%;
     color:white;
-    font-size: 2vw;
+    font-size: 5vw;
     margin-left:2%;
     width:min-content;
 }
 
 .vertical-navbar .icon{
-    margin-bottom:30px;
-    font-size: 2.7vw;
+    margin-bottom:3vw;
+    font-size: 8vw;
     margin-left:2%;
 }
 
@@ -85,13 +84,18 @@ a{
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
     .navbar-right-link{
         visibility:hidden;
         pointer-events:none;
     }
     .navbar-right .icon{
         display:flex;
+        font-size:8vw;
+    }  
+    .logo{
+        font-size:10vw;
     }
+
 }
   
