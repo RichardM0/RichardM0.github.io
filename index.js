@@ -13,6 +13,7 @@ function myFunction() {
             console.log(items[i]);
             items[i].style.visibility = "visible";
             items[i].pointerEvents = "auto";
+                
         }
       
     } else {
@@ -21,8 +22,12 @@ function myFunction() {
         c.style.display = "block";
         for(let i=0; i<items.length; i++){
             console.log(items[i]);
-            items[i].style.visibility = "hidden";
-            items[i].pointerEvents = "none";
+            if(window.innerWidth<720){
+                items[i].style.visibility = "hidden";
+                items[i].pointerEvents = "none";  
+            }
         }
     }
 }
+
+console.log(window.innerWidth);
