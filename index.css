@@ -62,7 +62,11 @@ a{
     width:100%;
     display:flex;
     flex-direction:column;
-    row-gap:1vw;
+    justify-content:center;
+    align-items:center;
+    row-gap:5%;
+    height:0;
+    transition: height 0.5s ease-in;
 
 }
 
@@ -72,6 +76,7 @@ a{
     font-size: 5vw;
     margin-left:2%;
     width:min-content;
+    height:min-content;
 }
 
 .vertical-navbar .icon{
@@ -80,22 +85,22 @@ a{
     margin-left:2%;
 }
 
+#top-navbar-right{
+    height:0;
+    transition: height 0.5s ease-in;
+}
 
-
-
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .navbar-right-link{
         visibility:hidden;
         pointer-events:none;
     }
     .navbar-right .icon{
         display:flex;
-        font-size:8vw;
+        font-size:7vw;
     }  
     .logo{
-        font-size:10vw;
+        font-size:8vw;
     }
 
 }

@@ -6,6 +6,7 @@ function myFunction() {
     var items = Array.prototype.slice.call( collection, 0 );
     if (x.className === "navbar-sect navbar-right") {
         x.className = "vertical-navbar";
+        x.style.height = "90%";
         i.className = "fa fa-angle-up";
         c.style.display = "flex";
         c.style.justifyContent = "center";
@@ -18,16 +19,15 @@ function myFunction() {
       
     } else {
         x.className = "navbar-sect navbar-right";
+        x.style.height = "0";
         i.className = "fa fa-bars";
         c.style.display = "block";
         for(let i=0; i<items.length; i++){
             console.log(items[i]);
-            if(window.innerWidth<720){
+            if(window.innerWidth<900){
                 items[i].style.visibility = "hidden";
                 items[i].pointerEvents = "none";  
             }
         }
     }
 }
-
-console.log(window.innerWidth);
