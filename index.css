@@ -6,7 +6,7 @@ header{
     justify-content:center;
     align-items:center;
     display:flex;
-    height:10%;
+    height:20%;
     margin:0;
     background-color:black;
 }
@@ -39,16 +39,16 @@ nav{
     flex-direction:row;
     align-items:center;
     text-align:center;
-    font-size:2.5vw;
+    font-size:3vw;
 }
 
 .navbar-right .icon{
-    font-size:2.5vw;
+    font-size:3vw;
     display:none;
 
 }
 .logo{
-    font-size: 4vw;
+    font-size: 5vw;
 }
 a{
     color:white;
@@ -102,28 +102,28 @@ a{
     justify-content:center;
 }   
 #intro-wrapper{
-    margin-top:20px;
     flex-direction:row;
 }
 
 #intro-img{
-    height:36vw;
-    width:35vw;
-    background-image:url("https://cdn.britannica.com/81/191581-050-8C0A8CD3/Alan-Turing.jpg");
+    height:90vh;
+    width:100vw;
+    background-image:url("https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg");
     background-size:cover;
 
 }
 
 #intro-desc-wrapper{
-    height:36vw;
-    width:30vw;
+    height:100%;
+    width:100%;
     flex-direction:column;
-    background-color:blue;
+    color:white;
     text-align:center;
 }
 
 #intro-desc-head{
-    font-size:3.4vw;
+    font-size:12vw;
+    margin:2vw;
 }
 
 #intro-desc-content{
@@ -143,7 +143,7 @@ a{
         font-size:8vw;
     }
     #intro-desc-head{
-        font-size:6vw;
+        font-size:12vw;
     }
     
     #intro-desc-content{
@@ -151,10 +151,12 @@ a{
     }
 
     #intro-desc-wrapper{
-        height:max(50vw, 50vh);
+        height:max(50vw, 70vh);
+        width:100%;
     }
     #intro-img{
-        height:max(50vw, 50vh);
+        height:max(50vw, 70vh);
+        width:100vw;
     }
 
 }
