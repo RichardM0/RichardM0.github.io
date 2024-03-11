@@ -90,6 +90,47 @@ a{
     transition: height 0.5s ease-in;
 }
 
+.container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    column-gap:5%;
+}
+.wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}   
+#intro-wrapper{
+    margin-top:20px;
+    flex-direction:row;
+}
+
+#intro-img{
+    height:36vw;
+    width:35vw;
+    background-image:url("https://cdn.britannica.com/81/191581-050-8C0A8CD3/Alan-Turing.jpg");
+    background-size:cover;
+
+}
+
+#intro-desc-wrapper{
+    height:36vw;
+    width:30vw;
+
+    flex-direction:column;
+    background-color:blue;
+    text-align:center;
+}
+
+#intro-desc-head{
+    font-size:3.4vw;
+}
+
+#intro-desc-content{
+    font-size:1.6vw;
+    margin: 0 2vw 0;
+}
 @media only screen and (max-width: 900px) {
     .navbar-right-link{
         visibility:hidden;
@@ -101,6 +142,20 @@ a{
     }  
     .logo{
         font-size:8vw;
+    }
+    #intro-desc-head{
+        font-size:4vw;
+    }
+    
+    #intro-desc-content{
+        font-size:2.3vw;
+    }
+
+    #intro-desc-wrapper{
+        height:40vw;
+    }
+    #intro-img{
+        height:40vw;
     }
 
 }
