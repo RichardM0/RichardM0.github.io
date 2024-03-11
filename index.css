@@ -117,7 +117,6 @@ a{
 #intro-desc-wrapper{
     height:36vw;
     width:30vw;
-
     flex-direction:column;
     background-color:blue;
     text-align:center;
@@ -144,18 +143,18 @@ a{
         font-size:8vw;
     }
     #intro-desc-head{
-        font-size:4vw;
+        font-size:12vw;
     }
     
     #intro-desc-content{
-        font-size:2.3vw;
+        font-size:5vw;
     }
 
     #intro-desc-wrapper{
-        height:40vw;
+        height:30vh;
     }
     #intro-img{
-        height:40vw;
+        height:30vh;
     }
 
 }
