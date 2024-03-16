@@ -94,18 +94,20 @@ a{
     display:flex;
     align-items:center;
     justify-content:center;
+    flex-direction:column;
     column-gap:5%;
 }
 .wrapper{
     display:flex;
     align-items:center;
     justify-content:center;
+    
 }   
-#intro-wrapper{
+#title-wrapper{
     flex-direction:row;
 }
 
-#intro-img{
+#title-img{
     height:90vh;
     width:100vw;
     background-image:url("https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg");
@@ -113,7 +115,7 @@ a{
 
 }
 
-#intro-desc-wrapper{
+#title-desc-wrapper{
     height:100%;
     width:100%;
     flex-direction:column;
@@ -121,15 +123,28 @@ a{
     text-align:center;
 }
 
-#intro-desc-head{
+#title-desc-head{
     font-size:12vw;
     margin:2vw;
 }
 
-#intro-desc-content{
-    font-size:1.6vw;
-    margin: 0 2vw 0;
+.desc-wrapper{
+    width:40vw;
+    height:70vh;
+    background-color:gray;
+
 }
+
+#intro-img{
+    width:50vw;
+    height:70vh;
+    background-color:lightslategray;
+}
+
+#intro-wrapper{
+    width:100%;
+}
+
 @media only screen and (max-width: 900px) {
     .navbar-right-link{
         visibility:hidden;
@@ -142,19 +157,19 @@ a{
     .logo{
         font-size:8vw;
     }
-    #intro-desc-head{
+    #title-desc-head{
         font-size:12vw;
     }
     
-    #intro-desc-content{
+    #title-desc-content{
         font-size:3vw;
     }
 
-    #intro-desc-wrapper{
+    #title-desc-wrapper{
         height:max(50vw, 70vh);
         width:100%;
     }
-    #intro-img{
+    #title-img{
         height:max(50vw, 70vh);
         width:100vw;
     }
