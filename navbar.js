@@ -1,4 +1,4 @@
-function myFunction() {
+function navbarResize() {
     var x = document.getElementById("mytop-navbar-right");
     var i = document.getElementById("icon-symbol");
     var c = document.getElementById("icon-toggle");
