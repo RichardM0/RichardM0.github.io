@@ -1,0 +1,16 @@
+.mycontainer{
+    position:relative;
+    z-index:-1;
+    margin-top:5%;
+}
+#myintro-desc-wrapper{
+    text-align:center;
+    margin-top:2%;
+}
+
+.myjumbotron{
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
