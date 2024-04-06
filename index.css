@@ -23,7 +23,7 @@ header{
 
 .seeMore-caption{
     text-align:right;
-    margin:5% 5% 0 0;
+    margin:3.33rem 3.33rem 0 0;
     font-size:2rem;
     color:black;
 }
@@ -49,12 +49,12 @@ header{
 
 .myHeader1{
     text-align:center;
-    font-size:8rem;
+    font-size:4.5rem;
 }
 .myHeader2{
     text-align:center;
     font-weight:lighter;
-    font-size:5rem;
+    font-size:3rem;
 }
 
 .myjumbotron{
