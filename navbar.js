@@ -11,6 +11,7 @@ function navbarResize() {
         x.style.height = "100%";
         i.className = "fa fa-angle-up";
         i.style.margin = "1% 2% 0 0";
+        i.style.fontSize = "7rem";
         c.style.display = "flex";
         c.style.justifyContent = "center";
         for(let i=0; i<items.length; i++){

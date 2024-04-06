@@ -40,16 +40,16 @@ nav{
     flex-direction:row;
     align-items:center;
     text-align:center;
-    font-size:3vw;
+    font-size:5rem;
 }
 
 .mynavbar-right .myicon{
-    font-size:3vw;
+    font-size:5rem;
     display:none;
 
 }
 .mylogo{
-    font-size: 5vw;
+    font-size: 6rem;
     color:white;
 }
 a{
@@ -79,14 +79,14 @@ a:link{
 
 .myvertical-navbar .mynavbar-item{
     color:white;
-    font-size: 5vw;
+    font-size: 5rem;
     width:min-content;
     height:min-content;
 }
 
 .myvertical-navbar .myicon{
     margin-bottom:3vw;
-    font-size: 8vw;
+    font-size: 5rem;
     margin-left:2%;
     color:white;
     text-decoration:none;
@@ -98,7 +98,7 @@ a:link{
 .mynavbar-right-link-vert{
     visibility:visible;
     pointer-events:auto;
-    font-size:6vw;
+    font-size:7rem;
     color:white;
 }
 
@@ -110,29 +110,14 @@ a:link{
     .mynavbar-right-link{
         visibility:hidden;
         pointer-events:none;
+        display:none;
     }
     .mynavbar-right .myicon{
         display:flex;
-        font-size:7vw;
+        font-size:5rem;
     }  
     .mylogo{
-        font-size:8vw;
-    }
-    #title-desc-head{
-        font-size:12vw;
-    }
-    
-    #title-desc-content{
-        font-size:3vw;
-    }
-
-    #title-desc-wrapper{
-        height:max(50vw, 70vh);
-        width:100%;
-    }
-    #title-img{
-        height:max(50vw, 70vh);
-        width:100vw;
+        font-size:6rem;
     }
 
 }
