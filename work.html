@@ -1,7 +1,7 @@
 <DOCTYPE html>
     <html>
     <head>
-        <link rel="stylesheet" href="./styles/about.css">
+        <link rel="stylesheet" href="./styles/work.css">
         <link rel="stylesheet" href="./styles/navbar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
@@ -19,8 +19,8 @@
     
             <div class = "mynavbar-sect mynavbar-right" id = "mytop-navbar-right">
                 <a href="about.html"><span class="mynavbar-item mynavbar-right-link"> About </span></a>
-                <a href="index.html#work"><span class="mynavbar-item mynavbar-right-link"> My Work </span></a>
-                <a href="index.html#experience"><span class="mynavbar-item mynavbar-right-link"> Experience </span></a>
+                <a href="work.html"><span class="mynavbar-item mynavbar-right-link"> My Work </span></a>
+                <a href="experience.html"><span class="mynavbar-item mynavbar-right-link"> Experience </span></a>
                 <a href="javascript:void(0);" id="icon-toggle" onclick="navbarResize()">
                     <span class ="mynavbar-item myicon"><i id="icon-symbol" class="fa fa-bars"></i></span>
                 </a>
@@ -30,13 +30,14 @@
     <main>
         <div class = "container mycontainer">
             <div class="row">
-                <div class="col-md-6">
-                    <img class="img-fluid" style = "max-width:100%; height:auto;" src="./images/fallRichard.jpg">
+                <div class="work-container">
+                    <img class="img-fluid work-img" src="./images/EduTowerDefense.png">
+                    <div class="work-desc-wrapper">
+                        <h1 class="work-desc-header">Brush Blaster</h1>
+                        <p class="work-desc-description">An educational tower defense game created while an intern at No Fuss Tutors. Created using TypeScript, React, React Konva, JSX, and SCSS.</p>
+                    </div>
                 </div>
-                <div class="col-md-6 about-desc-wrapper">
-                  <h1>Richard Meng</h1>
-                  <p>16</p>
-                </div>
+                
             </div>
         </div>
     </main>

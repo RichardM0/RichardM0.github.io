@@ -1,0 +1,28 @@
+.mycontainer{
+    position:relative;
+    z-index:-1;
+    margin-top:5%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+.work-desc-wrapper{
+    text-align:center;
+    margin-top:2%;
+    width:100%;
+}
+
+.work-container{
+    width:min-content;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+}
+
+.work-img{
+    width:55vw;
+    height:auto;
+}
+

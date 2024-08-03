@@ -58,13 +58,37 @@ header{
 }
 
 .myjumbotron{
+    width: 100%;
+    height: 90vh;    
+    background-image:url("../images/floridaSummerRichard.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.my-jumbotron-overlay{
+    background-color:rgba(0,0,0,0.5);
     width:100%;
     height:90vh;
     display:flex;
     justify-content:center;
+    align-items:center;
+    text-align:center;
     flex-direction:column;
-    margin:0px!important;
-    padding:0px!important;
+}
+
+.my-intro-header{
+    opacity:1;
+    font-size:8rem;
+    color:white;
+}
+
+.my-media-links{
+    color:white;
 }
 
  
@@ -73,6 +97,16 @@ header{
     margin:0px;
 }
 
-
+.animated {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+  
+.animated.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
 
 

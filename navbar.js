@@ -15,8 +15,6 @@ function navbarResize() {
         c.style.display = "flex";
         c.style.justifyContent = "center";
         for(let i=0; i<items.length; i++){
-            /*items[i].style.visibility = "visible";
-            items[i].pointerEvents = "auto"; */
             items[i].className = "mynavbar-right-link-vert"
         }
       
@@ -29,8 +27,6 @@ function navbarResize() {
         c.style.display = "block";
         for(let i=0; i<items.length; i++){
             console.log(items[i]);
-            /*items[i].style.visibility = "hidden";
-            items[i].pointerEvents = "none";  */
             items[i].className = "mynavbar-item mynavbar-right-link"
         }
     }
