@@ -1,13 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
   const animatedElements = document.querySelectorAll('.animated');
 
-  function isInViewport(element) {
+  function isInViewport(element, buffer = 30) {
     const rect = element.getBoundingClientRect();
+    const viewHeight = window.innerHeight || document.documentElement.clientHeight;
+    const viewWidth = window.innerWidth || document.documentElement.clientWidth;
+
     return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      rect.top + buffer < viewHeight &&
+      rect.bottom - buffer > 0 &&
+      rect.left + buffer < viewWidth &&
+      rect.right - buffer > 0
     );
   }
 
@@ -15,9 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     animatedElements.forEach(element => {
       if (isInViewport(element)) {
         element.classList.add('animate-in');
-      }
-      else{
-        element.classList.remove('animate-in')
+      } else {
+        element.classList.remove('animate-in');
       }
     });
   }
