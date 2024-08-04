@@ -146,14 +146,14 @@ header{
 }
 
 .exp-desc-wrapper{
-    border:solid, 0.25rem;
+    border:solid, 3px;
     border-radius:10px;
-    margin-bottom:5rem; 
+    margin-bottom:1rem; 
     flex: 1;
 }
 
 .exp-header{
-    border-bottom:0.125rem solid black;
+    border-bottom:2px solid black;
 }
 
 .exp-header-img{
