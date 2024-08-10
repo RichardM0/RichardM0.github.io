@@ -12,7 +12,7 @@ function navbarResize() {
         x.style.marginTop = "0";
         i.className = "fa fa-angle-up";
         i.style.margin = "1% 2% 0 0";
-        i.style.fontSize = "6rem";
+        i.style.fontSize = "5rem";
         c.style.display = "flex";
         c.style.justifyContent = "center";
         for(let i=0; i<items.length; i++){
@@ -25,7 +25,7 @@ function navbarResize() {
         document.getElementById("RM-logo").style.visibility = "visible";
         x.className = "mynavbar-sect mynavbar-right";
         x.style.height = "0";
-        x.style.marginTop = "5%";
+        x.style.marginTop = "10vh";
         i.className = "fa fa-bars";
         c.style.display = "block";
         for(let i=0; i<items.length; i++){
