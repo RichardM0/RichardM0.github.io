@@ -8,10 +8,11 @@ function navbarResize() {
         var items = Array.prototype.slice.call( collection, 0 );
         x.className = "myvertical-navbar";
         document.getElementById("RM-logo").style.visibility = "hidden";
-        x.style.height = "100%";
+        x.style.height = "100vh";
+        x.style.marginTop = "0";
         i.className = "fa fa-angle-up";
         i.style.margin = "1% 2% 0 0";
-        i.style.fontSize = "7rem";
+        i.style.fontSize = "6rem";
         c.style.display = "flex";
         c.style.justifyContent = "center";
         for(let i=0; i<items.length; i++){
@@ -23,6 +24,8 @@ function navbarResize() {
         var items = Array.prototype.slice.call( collection, 0 );
         document.getElementById("RM-logo").style.visibility = "visible";
         x.className = "mynavbar-sect mynavbar-right";
+        x.style.height = "0";
+        x.style.marginTop = "5%";
         i.className = "fa fa-bars";
         c.style.display = "block";
         for(let i=0; i<items.length; i++){

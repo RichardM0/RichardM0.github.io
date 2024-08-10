@@ -17,7 +17,6 @@ header{
     justify-content:center;
     align-items:center;
     flex-direction:column;
-
 }
 
 .my-row{
@@ -80,6 +79,8 @@ header{
 }
 
 .myjumbotron{
+    position:relative;
+    bottom:5vh;
     width: 100%;
     height: 90vh;    
     background-image:url("../images/floridaSummerRichard.jpg");
@@ -91,6 +92,7 @@ header{
     flex-direction: column;
     margin: 0;
     padding: 0;
+    z-index:1;
 }
 .my-jumbotron-overlay{
     background-color:rgba(0,0,0,0.5);
@@ -168,6 +170,11 @@ header{
 
 .exp-desc-text{
     margin:0 2rem 0.5rem 2rem;
+}
+
+.exp-image{
+    width:100%;
+    margin: 5px;
 }
 
 #nofuss-link{
