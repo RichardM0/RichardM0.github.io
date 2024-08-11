@@ -19,18 +19,6 @@ header{
     flex-direction:column;
 }
 
-/* Make the row behave like a table */
-.work-row {
-    display: flex;
-    flex:1;
-
-}
-
-/* Make columns behave like table cells */
-.work-col {
-    display: flex;
-    flex:1;
-}
 .my-row{
     width:100%;
     margin-bottom:6%;
@@ -167,6 +155,31 @@ header{
 .work-desc-more{
     font-size:16px;
     text-decoration:underline;
+}
+
+@media (min-width: 1000px) {
+    #plane-dodger-row{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    
+    .flex1-col{
+        flex:1;
+    }
+    
+    #plane-dodger-link-wrapper{
+        flex:1;
+        display:flex;
+        justify-content:center;
+        flex-direction:column;
+        align-items:center;
+    }
+    
+    #plane-dodger-image{
+        flex:1;
+        width: 100%;
+    }
 }
 
 #experience{
