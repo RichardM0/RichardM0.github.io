@@ -10,6 +10,11 @@ header{
     margin:0;
     background-color:black;
 }
+.container{
+    margin:4%; 
+    width:92%;
+}
+
 .mycontainer{
     position:relative;
     z-index:-1;
