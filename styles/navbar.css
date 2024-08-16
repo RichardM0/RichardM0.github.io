@@ -49,8 +49,7 @@ nav{
     flex-direction:row;
     align-items:center;
     text-align:center;
-    font-size:3rem;
-    transition: transform 0.2s ease-out;
+    font-size:4rem;
 }
 
 .mynavbar-right-link:hover{
@@ -63,7 +62,7 @@ nav{
 
 }
 .mylogo{
-    font-size: 4.5rem;
+    font-size: 5rem;
     color:white;
     transition:transform 0.2s ease-out;
 }
@@ -92,7 +91,6 @@ a:link{
     row-gap:5%;
     height:0;
     z-index:0;
-    transition: height 0.5s ease-in;
 
 }
 

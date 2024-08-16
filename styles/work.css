@@ -2,6 +2,7 @@ body{
     margin:0px;
     padding:0px;
 }
+
 header{
     justify-content:center;
     align-items:center;
@@ -11,13 +12,28 @@ header{
     background-color:black;
 }
 .mycontainer{
+    width:100%;
     position:relative;
     z-index:-1;
     margin-top:5%;
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:row;
+    flex-direction:column;
+}
+
+.large-header{
+    padding-top:8px;
+    font-size:min(12vw, 12vh);
+}
+
+.medium-header{
+    padding-left:8px;
+    font-size:min(5vw,5vh);
+}
+
+.my-row{
+    width:100%;
 }
 .work-desc-wrapper{
     text-align:center;
@@ -38,3 +54,25 @@ header{
     height:auto;
 }
 
+.information-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin:5vh 0 0 20px;
+    font-size:min(3vw, 3vh);
+}
+
+.information-paragraph{
+    width:100%;
+    margin-bottom:5vh;
+    text-align:justify;
+}
+
+.link-span{
+    color:black;
+}
+
+.nofuss-link{
+    pointer-events:all;
+}

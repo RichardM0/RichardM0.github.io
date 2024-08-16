@@ -1,0 +1,30 @@
+.myfooter{
+    height:30vh;
+    width:100%;
+    background-color:rgb(191, 220, 232);
+    margin-top:5vh;
+}
+
+.communication-wrapper{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.communication-content{
+    font-size:2rem;
+    text-align:center;
+    color:black;
+}
+
+.footer-link{
+    font-size:3rem;
+    margin:5px;
+}
+
+.footer-icon{
+    color:black;
+}
