@@ -29,7 +29,7 @@ header{
 
 .medium-header{
     padding-left:8px;
-    font-size:min(5vw,5vh);
+    font-size:min(7vw,7vh);
 }
 
 .my-row{
@@ -60,7 +60,7 @@ header{
     align-items:center;
     flex-direction:column;
     margin:5vh 0 0 20px;
-    font-size:min(3vw, 3vh);
+    font-size:min(4vw, 4vh);
 }
 
 .information-paragraph{
