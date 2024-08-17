@@ -78,3 +78,15 @@
 .hidden{
     display:hidden;
 }
+
+@media only screen and (max-width: 1000px) {
+    .indicator-dot{
+        width:5px;
+        height:5px;
+        margin:8px;
+        border-radius:50%;
+        border:none;
+        background-color:gray;
+        pointer-events:none;
+    }
+}
