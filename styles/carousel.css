@@ -29,11 +29,12 @@
 
 .carousel-button {
     position: absolute;
-    top: 50%;
+    top: 40%;
     background-color:transparent;
     border: none;
     padding: 10px;
     cursor: pointer;
+    transition:transform 0.3s ease-in-out;
 }
 
 .carousel-button:hover{
@@ -42,7 +43,7 @@
 }
 
 .button-label-1{
-    font-size:48px;
+    font-size:44px;
 }
 
 #prev-image-button {
@@ -62,17 +63,17 @@
 }
 
 .indicator-dot{
-    width:min(3vw,3vh);
-    height:min(3vw,3vh);
+    width:min(2.5vw,2.5vh);
+    height:min(2.5vw,2.5vh);
     margin:8px;
     border-radius:50%;
     border:none;
-    background-color:gray;
+    background-color:rgb(157, 157, 157);
     pointer-events:none;
 }
 
 .active{
-    background-color:blue;
+    background-color:rgb(39, 39, 216);
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,0 +1,72 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="./styles/work.css">
+            <link rel="stylesheet" href="./styles/navbar2.css">
+            <link rel="stylesheet" href="./styles/carousel.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <script src="navbar.js" type="text/javascript"></script>
+            <script src="carousel.js" type="text/javascript"></script>
+        </head>
+        <body>
+        <header>
+            <nav style="background:linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(250,218,221,1))">
+                <div class = "mynavbar-sect mynavbar-left">
+                    <a href="index.html"><span class="mynavbar-item mylogo" id="RM-logo"> RM </span></a>
+                </div>
+                <div class = "mynavbar-sect mynavbar-right" id = "mytop-navbar-right">
+                    <a href="about.html"><span class="mynavbar-item mynavbar-right-link"> About </span></a>
+                    <a href="index.html#work"><span class="mynavbar-item mynavbar-right-link"> My Work </span></a>
+                    <a href="index.html#experience"><span class="mynavbar-item mynavbar-right-link"> Experience </span></a>
+                    <a href="javascript:void(0);" id="icon-toggle" onclick="navbarResize()">
+                        <span class ="mynavbar-item myicon"><i id="icon-symbol" class="fa fa-bars"></i></span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img id="carousel-img" src="images/EduTDMain.png" alt="carousel-image">
+                    </div>
+                    <button onClick="prevImage()" class="carousel-button" id="prev-image-button"><span class="button-label-1">❮</span></button>
+                    <button onClick="nextImage()" class="carousel-button" id="next-image-button"><span class="button-label-1">❯</span></button>
+                    <div class="indicator-container">
+                        <button id="dot1" class="indicator-dot"></button>
+                        <button id="dot2" class="indicator-dot"></button>
+                        <button id="dot3" class="indicator-dot"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "container mycontainer" style="margin:0 4% 0 4%; width:92%">
+                <div class="row my-row">
+                    <h1 class="large-header">Certificates</h1>
+                    <h1 class="medium-header">No Fuss Tutors</h1>
+                </div>
+                <div class="row my-row">
+                    <div class="information-container">
+                        <div class="information-paragraph">
+                            Working at an internship for No Fuss Tutors as a part of the COOP Program at Georges Vanier Secondary School has allowed me to gain professional experience as a game developer. Besides that, I have learned TypeScript and React to create a web-based tower defense game. 
+                        </div>
+                        <div class="information-paragraph">
+                            Brush Blaster is a tower defense game that allows you to answer questions in between "waves" to get extra brushes, the currency of the game. Besides that, the logic is very similar to other tower defense games. There are waves, a timer that spawns the next wave if you don't beat the current round fast enough, and a multitude of enemies and towers.
+                        </div>
+                        <div class="information-paragraph">
+                            The different types of enemies include fast enemies, enemies with a lot of health, balanced, and an enemy that is much stronger than the rest. As for towers, there is a shock tower, laser, cannon, and missile tower.             
+                        </div>
+                        <div class="information-paragraph">
+                            Soon to be released on <a target="_blank"class="nofuss-link" href="https://nofusstutors.com"><span class="link-span">their website</span></a>
+                        </div>
+                        <!--Note: Change EduTDGame.png to updated game visuals-->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </html>

@@ -115,6 +115,7 @@ header{
     margin: 0;
     padding: 0;
     z-index:1;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 .my-jumbotron-overlay{
     background-color:rgba(0,0,0,0.5);

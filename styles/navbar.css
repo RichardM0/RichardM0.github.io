@@ -1,7 +1,4 @@
-body{
-    margin:0px;
-    padding:0px;
-}
+
 header{
     position:absolute;
     justify-content:center;
@@ -22,6 +19,7 @@ nav{
     height:100%;
     color:white;
     background-color:transparent;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 .my-navbar{
