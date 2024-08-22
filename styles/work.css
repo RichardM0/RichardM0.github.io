@@ -32,6 +32,11 @@ header{
     font-size:min(7vw,7vh);
 }
 
+.small-header{
+    padding-left:8px;
+    font-size:min(5vw,5vh);
+}
+
 .my-row{
     width:100%;
 }

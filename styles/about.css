@@ -21,14 +21,15 @@ header{
 .row{
     display:flex;
     flex:1;
+    width:100%;
     margin-bottom:5vh;
 }
 .mycontainer{
     position:relative;
-    z-index:-1;
     margin-top:5%;
 }
 .about-desc-wrapper{
+    width:100%;
     text-align:justify;
     flex:1;
     display:flex;
@@ -36,11 +37,24 @@ header{
     justify-content:center;
 }
 
+.about-desc-wrapper-alt{
+    width:100%;
+    text-align:justify;
+    text-align-last:right;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-right:15px;
+}
+
 .about-image-container{
+    width:100%;
     display:flex;
     justify-content:center;
     align-items:center;
     flex:1;
+    padding:0;
 }
 
 .header-wrapper{
@@ -75,9 +89,50 @@ header{
     color:black;
 }
 
+.img-strict{
+    max-width:100%;
+    height:auto;
+}
+
+.large-image{
+    width:90%;
+    height:auto;
+}
+
+.spotlight-column{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+.row-header{
+    text-align:center;
+    width:100%;
+    font-size:5rem;
+}
+
+.certificate-header{
+    font-size:3rem;
+    text-decoration:underline;
+}
+
+.certificate-desc{
+    font-size:2rem;
+}
+
+.certificate-redirect{
+    color:black!important;
+    text-decoration:none;
+    padding:15px;
+}
 @media (max-width: 1100px) {
     .about-desc-wrapper, .information-paragraph{
         text-align:left;
+    }
+    .about-desc-wrapper-alt{
+        text-align:center;
+        text-align-last:auto;
     }
     .container{
         margin:4%;
