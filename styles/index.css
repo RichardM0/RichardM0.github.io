@@ -307,3 +307,11 @@ header{
 .zoom-icon:hover{
     transform:scale(1.25);
 }
+
+.vertical-align{
+    flex:1; 
+    display:flex; 
+    align-items:center; 
+    justify-content:center; 
+    flex-direction:center;
+}
