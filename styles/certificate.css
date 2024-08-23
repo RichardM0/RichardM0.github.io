@@ -1,0 +1,33 @@
+#certificate-image{
+
+}
+
+.certificate-container{
+    width:100%;
+}
+
+#cert-header{
+    margin-top:15px;
+    font-size:6rem;
+    text-align:center;
+}
+
+#cert-desc{
+    margin-top:15px;
+    font-size:3rem;
+    text-align:center;
+}
+
+.image-strict{
+    max-width:100%;
+    height:auto;
+}
+
+.description-container{
+    width:94%;
+    margin:0 3% 0 3%;
+}
+
+.cert-card-desc{
+    text-align:center;
+}

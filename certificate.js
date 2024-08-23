@@ -83,14 +83,30 @@ function getQueryParam(param) {
 
 window.onload = function() {
     const cert = getQueryParam('cert');
+    const certImage = document.getElementById("certificate-image")
+    const header = document.getElementById('cert-header')
+    const desc = document.getElementById('cert-desc')
     if (cert=="cayley") {
-        document.getElementById('message').innerText = "cayley";
+        header.innerText = "Cayley Contest";
+        desc.innerText = "A mathematics competition hosted by the University of Waterloo for mostly grade 10s. It takes place each year around the end of February."
+        certImage.src="./images/EduTDMain.png"
     }
     else if (cert=="csmc") {
-        document.getElementById('message').innerText = "canadian senior math contest";
+        header.innerText = "Canadian Senior Mathematics Contest";
+        desc.innerText = "A mathematics competition hosted by the University of Waterloo for mostly grade 11s and 12s. It takes place each year around the middle of November."
+        certImage.src="./images/EduTDLevel.png"
     }
     else if (cert=="fermat") {
         document.getElementById('message').innerText = "fermat";
+        certImage.src="./images/EduTDGame.png"
+    }
+    else if (cert=="sfu") {
+        document.getElementById('message').innerText = "sfu";
+        certImage.src="./images/gvsscoding.png"
+    }
+    else if (cert=="l2l") {
+        document.getElementById('message').innerText = "l2l";
+        certImage.src="./images/l2l.png"
     }
 
 };
