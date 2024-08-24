@@ -2,15 +2,23 @@ function navbarResize() {
     var x = document.getElementById("mytop-navbar-right");
     var i = document.getElementById("icon-symbol");
     var c = document.getElementById("icon-toggle");
+    var mainContent = document.querySelector("main");
+    var footer = document.querySelector("footer");
 
     if (x.className === "mynavbar-sect mynavbar-right") {
         var collection = document.getElementsByClassName("mynavbar-right-link");
         var items = Array.prototype.slice.call( collection, 0 );
         var ec = document.getElementById("ec");
         var n = document.getElementById('brush-nav');
+        var n2 = document.getElementById('index-nav');
         if(n){
             n.style.background="black";
         }
+        if(n2){
+            n2.style.background="black";
+        }
+        mainContent.style.display = "none";
+        footer.style.display = "none";
         x.className = "myvertical-navbar";
         document.getElementById("RM-logo").style.visibility = "hidden";
         ec.innerText = "EC Activity";
@@ -32,11 +40,17 @@ function navbarResize() {
     } else {
         var collection = document.getElementsByClassName("mynavbar-right-link-vert");
         var items = Array.prototype.slice.call( collection, 0 );
-        var n = document.getElementById('brush-nav');
         var ec = document.getElementById("ec");
+        var n = document.getElementById('brush-nav');
+        var n2 = document.getElementById('index-nav');
         if(n){
             n.style.background="linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(250,218,221,1))";
         }
+        if(n2){
+            n2.style.background="linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));";
+        }
+        mainContent.style.display = "block";
+        footer.style.display = "block";
         document.getElementById("RM-logo").style.visibility = "visible";
         ec.innerText = "Extracurriculars";
         x.className = "mynavbar-sect mynavbar-right";
