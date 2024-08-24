@@ -24,6 +24,36 @@ header{
     margin-bottom:6%;
 }
 
+.element-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.element-wrapper{
+    text-align:center;
+    flex:1;
+}
+
+.element-link{
+    text-decoration:none;
+    color:black!important;
+}
+
+@media (max-width:1100px){
+    .element-wrapper, .element-container{
+        display:block;
+    }
+    .my-row{
+        margin:0;
+    }
+}
+
+.element-wrapper h1{
+    font-size: calc(1vw + 1em);
+    margin-bottom:10px;
+}
+
 .media-link{
     margin:5px;
     font-size:3rem;
@@ -129,6 +159,7 @@ header{
 }
 
 .my-intro-header{
+    margin:0;
     opacity:1;
     font-size:8rem;
     color:white;
@@ -191,7 +222,20 @@ header{
     text-align:center;
 }
 
+.my-flex{
+    display:flex;
+}
 
+@media (max-width:1100px){
+    .my-flex{
+        display:block;
+    }
+
+    .vertical-align{
+        display:block;
+    }
+
+}
 
 @media (min-width: 1000px) {
     .work-align-row{
@@ -314,4 +358,21 @@ header{
     align-items:center; 
     justify-content:center; 
     flex-direction:center;
+}
+
+.typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid black;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    0%, 49% { border-color: black; }
+    50%, 100% { border-color: transparent; }
 }

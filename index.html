@@ -1,177 +1,110 @@
 <DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="./styles/index.css">
-        <link rel="stylesheet" href="./styles/navbar.css">
-        <link rel="stylesheet" href="./styles/footer.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-        <script src="navbar.js" type="text/javascript"></script>
-        <script src="animate.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <header>
-            <nav class="my-navbar">
-                <div class = "mynavbar-sect mynavbar-left">
-                    <a href="index.html"><span class="mynavbar-item mylogo" id="RM-logo"> RM </span></a>
-                </div>
-
-                <div class = "mynavbar-sect mynavbar-right" id = "mytop-navbar-right">
-                    <a href="about.html"><span class="mynavbar-item mynavbar-right-link"> About </span></a>
-                    <a href="#work"><span class="mynavbar-item mynavbar-right-link"> My Work </span></a>
-                    <a href="#experience"><span class="mynavbar-item mynavbar-right-link"> Experience </span></a>
-                    <a href="javascript:void(0);" id="icon-toggle" onclick="navbarResize()">
-                        <span class ="mynavbar-item myicon"><i id="icon-symbol" class="fa fa-bars"></i></span>
-                    </a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div class="myjumbotron-container">
-                <div class="text-center myjumbotron">
-                    <div class="my-jumbotron-overlay">
-                        <h1 class="my-intro-header">Richard Meng</h1>
-                        <div class="my-media-links">
-                            <a class="media-link" href="https://github.com/RichardM0" target="_blank">
-                                <i class="zoom-icon media-icon fab fa-github"></i>
-                            </a>
-                            <a class="media-link" href="https://www.instagram.com/richardmeeng" target="_blank">
-                                <i class="zoom-icon media-icon fab fa-instagram"></i>
-                            </a>
-                        </div>
+    <html>
+        <head>
+            <link rel="stylesheet" href="./styles/index.css">
+            <link rel="stylesheet" href="./styles/navbar.css">
+            <link rel="stylesheet" href="./styles/footer.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+            <script src="navbar.js" type="text/javascript"></script>
+            <script src="animate.js" type="text/javascript"></script>
+        </head>
+        <body>
+            <header>
+                <nav class="my-navbar">
+                    <div class = "mynavbar-sect mynavbar-left">
+                        <a href="index.html"><span class="mynavbar-item mylogo" id="RM-logo"> RM </span></a>
                     </div>
-                </div>
-            </div>
-            
-            <div class="container mycontainer" style="margin:4%; width:92%;">
-                <div id="about">
-                    <div class="row animated">
-                        <h1 class="myHeader1 display-1">16 year old at <span id="vanier-span">Georges Vanier</span> <span id="vanier-span2">Secondary School</span></h1>
-                    </div>
-                    <div class="row animated" style="margin-top:3%;">
-                        <h4 class="myHeader2 display-2">Student with interests in maths, computer science, and finance, looking to gain experience.</h4>
-                        <h4 class="seeMore-caption"> See more: <a href="about.html"><span id="seeMore-AboutMe-span">About Me</span></a></h4>
-                    </div>
-                </div>
-                <hr class="hr-line-1 animated" >
-                <div id="work" class="row animated">
-                    <h1 class="myX-caption">My Work</h1>
-                </div>
-                <div class="row my-row">
-                    <a class="experience-link-wrapper" href="brushblaster.html">
-                        <div class="col-md-6 exp-desc-wrapper animated">
-                            <div class="exp-image-wrapper">
-                                <img class="exp-image zoom-image"src="images/EduTDMain.png">
-                            </div>
-                            <div class="exp-desc-text">
-                                <h1>Brush Blaster</h1>
-                                <p class="exp-desc-p">
-                                    Strategic + educational tower defense game. Made using React, React Konva, TypeScript, and more.
-                                </p>
-                
-                            </div>
-                        </div>
-                    </a>
-                    <a class="experience-link-wrapper" href="https://github.com/RichardM0/Plane-Dodger" target="_blank">
-                        <div class="col-md-6 exp-desc-wrapper animated">
-                            <div class="exp-image-wrapper">
-                                <img class="exp-image zoom-image" src="images/start_screen.png">
-                            </div>
-                            <div class="exp-desc-text">
-                                <h1>Plane Dodger</h1>
-                                <p class="exp-desc-p">
-                                    Flappy bird spinoff involving dodging incoming planes, with similar mechanics. Made using Java Swing/AWT
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div id="experience" class="row animated" style="margin-top:5rem;">
-                    <h1 class="myX-caption">My COOP</h1>
-                </div>
-                <div class="row my-row">
-                    <a style="display:flex;" class="experience-link-wrapper" href="https://nofusstutors.com/" target="_blank">
-                        <div style="flex:1;" class="col-md-6 exp-desc-wrapper animated">
-                            <div class="exp-image-wrapper">
-                                <img class="exp-image zoom-image"src="images/nofusstutors.png">
-                            </div>
-                        </div>
-                        <div class="vertical-align col-md-6">
-                            <div class="exp-desc-text">
-                                <h1>No Fuss Tutors</h1>
-                                <p class="exp-desc-p">
-                                    <span class="bold-span">Game Developer</span> at No Fuss Tutors. As an intern at a COOP experience, I worked on Brush Blaster, an educational Tower Defense game.
-                                </p>
-                
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div id="experience" class="row animated" style="margin-top:5rem;">
-                    <h1 class="myX-caption">Experience</h1>
-                </div>
-                <div class="row my-row">
-                    <a class="experience-link-wrapper" href="https://sites.google.com/tdsb.on.ca/gvsssac/vanier-clubs?pli=1#h.c72bdd5bfd2664b_115" target="_blank">
-                        <div class="col-md-4 exp-desc-wrapper animated">
-                            <div class="exp-image-wrapper">
-                                <img class="exp-image zoom-image"src="images/gvsscoding.png">
-                            </div>
-                            <div class="exp-desc-text">
-                                <h1>Vanier Programming Club Lead</h1>
-                                <p class="exp-desc-p">
-                                    As one of the three student leads, we engaged students at Georges Vanier Secondary School by giving them contest problems and friendly competitions for all levels.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="experience-link-wrapper" href="https://www.wilmarheights.ca/copy-of-children-s-ministry" target="_blank">
-                        <div class="col-md-4 exp-desc-wrapper animated">
-                            <div class="exp-image-wrapper">
-                                <img class="exp-image zoom-image"src="images/campImani.webp">
-                            </div>
-                            <div class="exp-desc-text">
-                                <h1>Camp Imani</h1>
-                                <p class="exp-desc-p">
-                                    <span class="bold-span">Summer Camp</span> volunteer at Camp Imani, frequently helping kids and young teens learn and have fun.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="experience-link-wrapper" href="https://l2l.ca/" target="_blank">
-                        <div class="col-md-4 exp-desc-wrapper animated">
-                            <div class="exp-image-wrapper">
-                                <img class="exp-image zoom-image"src="images/l2l.png">
-                            </div>
-                            <div class="exp-desc-text">
-                                <h1>L2L Peer Tutor</h1>
-                                <p class="exp-desc-p">
-                                    <span class="bold-span">Tutored</span> peers at Georges Vanier Secondary School, certified under Licensed 2 Learn.
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </main>
-        <footer class="myfooter">
-            <div class="communication-wrapper">
-                <div class="communication-content">
-                    <h1>myemail@gmail.com</h1>
-                    <div class="link-container">
-                        <a class="footer-link" href="https://www.instagram.com/richardmeeng" target="_blank">
-                            <i class="zoom-icon fab footer-icon fa-instagram"></i>
-                        </a>
-                        <a class="footer-link" href="https://www.github.com/RichardM0" target="_blank">
-                            <i class="zoom-icon fab footer-icon fa-github"></i>
+    
+                    <div class = "mynavbar-sect mynavbar-right" id = "mytop-navbar-right">
+                        <a href="about.html"><span class="mynavbar-item mynavbar-right-link"> About </span></a>
+                        <a href="#work"><span class="mynavbar-item mynavbar-right-link"> My Work </span></a>
+                        <a href="#experience"><span class="mynavbar-item mynavbar-right-link"> Experience </span></a>
+                        <a href="javascript:void(0);" id="icon-toggle" onclick="navbarResize()">
+                            <span class ="mynavbar-item myicon"><i id="icon-symbol" class="fa fa-bars"></i></span>
                         </a>
                     </div>
+                </nav>
+            </header>
+            <main>
+                <div class="myjumbotron-container">
+                    <div class="text-center myjumbotron">
+                        <div class="my-jumbotron-overlay">
+                            <h1 class="my-intro-header">Richard Meng</h1>
+                            <div class="my-media-links">
+                                <a class="media-link" href="https://github.com/RichardM0" target="_blank">
+                                    <i class="zoom-icon media-icon fab fa-github"></i>
+                                </a>
+                                <a class="media-link" href="https://www.instagram.com/richardmeeng" target="_blank">
+                                    <i class="zoom-icon media-icon fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </footer>
-    </body>
-</html>
+                
+                <div class="container mycontainer" style="margin:4%; width:92%;">
+                    <div id="about">
+                        <div class="row animated">
+                            <h1 class="myHeader1 display-1">16 year old at <span id="vanier-span">Georges Vanier</span> <span id="vanier-span2">Secondary School</span></h1>
+                        </div>
+                        <div class="row animated" style="margin-top:3%;">
+                            <h4 class="myHeader2 animate display-2">Student with interests in maths, computer science, and finance, looking to gain experience.</h4>
+                    
+                        </div>
+                    </div>
+                    <hr class="hr-line-1 animated" >
+                    <div id="work" class="row animated">
+                        <h1 class="myX-caption">My Work</h1>
+                    </div>
+                    <div class="row animated element-container my-row">
+                        <div class="element-wrapper col-md-4">
+                            <h1>Resume</h1>
+                        </div>
+                        <div class="element-wrapper col-md-4">
+                            <a class="element-link" href="projects.html">
+                                <h1>Projects</h1> 
+                            </a>
+                        </div>
+                        <div class="element-wrapper col-md-4">
+                            <h1>COOP</h1>
+                        </div>
+                    </div>
+                    <div class="row element-container animated my-row">
+                        <div class="element-wrapper col-md-3">
+                            <h1>Contests</h1>
+                        </div>
+                        <div class="element-wrapper col-md-3">
+                            <h1>Courses</h1>
+                        </div>
+                        <div class="element-wrapper col-md-3">
+                            <h1>Report Card</h1>
+                        </div>
+                        <div class="element-wrapper col-md-3">
+                            <h1>Activity</h1>
+                        </div>
+                    </div>
+            </main>
+            <footer class="myfooter">
+                <div class="communication-wrapper">
+                    <div class="communication-content">
+                        <h1>myemail@gmail.com</h1>
+                        <h3> References available upon request </h3>
+                        <div class="link-container">
+                            <a class="footer-link" href="https://www.instagram.com/richardmeeng" target="_blank">
+                                <i class="zoom-icon fab footer-icon fa-instagram"></i>
+                            </a>
+                            <a class="footer-link" href="https://www.github.com/RichardM0" target="_blank">
+                                <i class="zoom-icon fab footer-icon fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </body>
+    </html>
