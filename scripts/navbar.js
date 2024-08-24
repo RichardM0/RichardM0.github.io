@@ -5,13 +5,15 @@ function navbarResize() {
 
     if (x.className === "mynavbar-sect mynavbar-right") {
         var collection = document.getElementsByClassName("mynavbar-right-link");
-        var n = document.getElementById('brush-nav');
         var items = Array.prototype.slice.call( collection, 0 );
+        var ec = document.getElementById("ec");
+        var n = document.getElementById('brush-nav');
         if(n){
             n.style.background="black";
         }
         x.className = "myvertical-navbar";
         document.getElementById("RM-logo").style.visibility = "hidden";
+        ec.innerText = "EC Activity";
         x.style.height = "max-content";
         x.style.zIndex="1000";
         x.style.marginTop = "0";
@@ -29,12 +31,14 @@ function navbarResize() {
       
     } else {
         var collection = document.getElementsByClassName("mynavbar-right-link-vert");
-        var n = document.getElementById('brush-nav');
         var items = Array.prototype.slice.call( collection, 0 );
+        var n = document.getElementById('brush-nav');
+        var ec = document.getElementById("ec");
         if(n){
             n.style.background="linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(250,218,221,1))";
         }
         document.getElementById("RM-logo").style.visibility = "visible";
+        ec.innerText = "Extracurriculars";
         x.className = "mynavbar-sect mynavbar-right";
         x.style.height = "0";
         x.style.marginTop = "10vh";

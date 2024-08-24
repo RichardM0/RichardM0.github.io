@@ -125,6 +125,7 @@ a:link{
     height:0;
     transition: height 0.5s ease-in;
 }
+
 @media only screen and (max-width: 1080px) {
     .mynavbar-right-link{
         transition:transform 0.2s ease-out;
