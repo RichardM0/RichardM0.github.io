@@ -24,26 +24,65 @@ header{
     margin-bottom:6%;
 }
 
-.element-container{
+.strict-row{
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
+@media (max-width:720px) {
+    .strict-row{
+        display:block;
+    }
+}
+
+.element-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2vw;
+    padding-bottom:2vw;
+}
+
+
 .element-wrapper{
+    width:100%;
+    padding:5vw;
     text-align:center;
     flex:1;
 }
 
 .element-link{
+    background-color:navy;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 0.5rem solid black;
+    border-radius: 5px;
+    flex:1;
     text-decoration:none;
-    color:black!important;
+    color:white!important;
+}
+
+@media (max-width:990px){
+    .element-wrapper, .element-container{
+        display:block;
+
+    }
+    .element-container{
+        padding:0;
+    }
 }
 
 @media (max-width:1100px){
-    .element-wrapper, .element-container{
+    .my-flex{
         display:block;
     }
+
+    .vertical-align{
+        display:block;
+    }
+
     .my-row{
         margin:0;
     }
@@ -226,16 +265,6 @@ header{
     display:flex;
 }
 
-@media (max-width:1100px){
-    .my-flex{
-        display:block;
-    }
-
-    .vertical-align{
-        display:block;
-    }
-
-}
 
 @media (min-width: 1000px) {
     .work-align-row{
@@ -260,6 +289,14 @@ header{
         flex:1;
         width: 100%;
     }
+
+    .trans-image{
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: center top;
+    }
 }
 
 #experience{
@@ -273,7 +310,7 @@ header{
 }
 
 .exp-desc-wrapper{
-    width:100%;
+    width:100%!important;
     margin-top:6vh;
     flex: 1;
 }
@@ -281,6 +318,8 @@ header{
 .exp-header{
     border-bottom:2px solid black;
 }
+
+
 
 .exp-header-img{
     width:100%; 
@@ -314,6 +353,7 @@ header{
 
 .experience-link-wrapper{
     text-decoration:none;
+    flex:1;
 }
 
 .exp-desc-p{
