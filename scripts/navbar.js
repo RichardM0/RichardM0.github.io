@@ -47,7 +47,7 @@ function navbarResize() {
             n.style.background="linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(250,218,221,1))";
         }
         if(n2){
-            n2.style.background="linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));";
+            n2.style.background="linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))";
         }
         mainContent.style.display = "block";
         footer.style.display = "block";
