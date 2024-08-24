@@ -2,13 +2,16 @@ function navbarResize() {
     var x = document.getElementById("mytop-navbar-right");
     var i = document.getElementById("icon-symbol");
     var c = document.getElementById("icon-toggle");
+    var n = document.getElementById('brush-nav');
 
     if (x.className === "mynavbar-sect mynavbar-right") {
         var collection = document.getElementsByClassName("mynavbar-right-link");
         var items = Array.prototype.slice.call( collection, 0 );
+        n.style.background="black";
         x.className = "myvertical-navbar";
         document.getElementById("RM-logo").style.visibility = "hidden";
-        x.style.height = "100vh";
+        x.style.height = "max-content";
+        x.style.zIndex="1000";
         x.style.marginTop = "0";
         i.className = "fa fa-angle-up";
         i.style.margin = "1% 2% 0 0";
@@ -16,12 +19,16 @@ function navbarResize() {
         c.style.display = "flex";
         c.style.justifyContent = "center";
         for(let i=0; i<items.length; i++){
+            if(items[i].classList.contains("navbar-icon")){
+                continue;
+            }
             items[i].className = "mynavbar-right-link-vert"
         }
       
     } else {
         var collection = document.getElementsByClassName("mynavbar-right-link-vert");
         var items = Array.prototype.slice.call( collection, 0 );
+        n.style.background="linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(250,218,221,1))";
         document.getElementById("RM-logo").style.visibility = "visible";
         x.className = "mynavbar-sect mynavbar-right";
         x.style.height = "0";
@@ -29,7 +36,6 @@ function navbarResize() {
         i.className = "fa fa-bars";
         c.style.display = "block";
         for(let i=0; i<items.length; i++){
-            console.log(items[i]);
             items[i].className = "mynavbar-item mynavbar-right-link"
         }
     }

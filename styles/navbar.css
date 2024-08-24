@@ -19,7 +19,7 @@ nav{
     height:100%;
     color:white;
     background-color:transparent;
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .my-navbar{
@@ -27,11 +27,19 @@ nav{
     height:110%;
 }
 
+.navbar-icon-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    gap:1vw;
+}
+
 .mynavbar-sect{
     height:100%;
     display:flex;
     flex-direction:row;
-    column-gap:5vw;
+    gap:2vw;
 }
 .mynavbar-left{
     float:left;
@@ -47,7 +55,7 @@ nav{
     flex-direction:row;
     align-items:center;
     text-align:center;
-    font-size:4rem;
+    font-size:2rem;
 }
 
 .mynavbar-right-link:hover{
@@ -86,10 +94,10 @@ a:link{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    row-gap:5%;
+    gap:2vh;
     height:0;
     z-index:0;
-
+    transition: height 0.5s ease-in;
 }
 
 .myvertical-navbar .mynavbar-item{
@@ -121,7 +129,7 @@ a:link{
     height:0;
     transition: height 0.5s ease-in;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
     .mynavbar-right-link{
         transition:transform 0.2s ease-out;
         visibility:hidden;
