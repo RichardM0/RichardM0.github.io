@@ -74,13 +74,12 @@ nav{
 }
 
 .mylogo:hover{
-    transform:scale(1.25);
+    transform:scale(1.2);
 }
 a{
     color:white!important;
     text-decoration:none;
 }
-
 a:link{
     text-decoration: none!important;
     color:white;
