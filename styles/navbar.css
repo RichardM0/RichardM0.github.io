@@ -1,13 +1,13 @@
-
+body{
+    margin:0px;
+    padding:0px;
+}
 header{
-    position:absolute;
     justify-content:center;
     align-items:center;
     display:flex;
-    height:20vh;
-    width:100%;
+    height:12vh;
     margin:0;
-    background-color:transparent;
     z-index:1000;
 }
 nav{
@@ -18,21 +18,7 @@ nav{
     width:100%;
     height:100%;
     color:white;
-    background-color:transparent;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-}
-
-.my-navbar{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    height:110%;
-}
-
-.navbar-icon-container{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:row;
-    gap:1vw;
+    font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 .mynavbar-sect{
@@ -58,10 +44,6 @@ nav{
     font-size:1.8rem;
 }
 
-.mynavbar-right-link:hover{
-    transform:scale(1.3);
-}
-
 .mynavbar-right .myicon{
     font-size:3rem;
     display:none;
@@ -74,12 +56,14 @@ nav{
 }
 
 .mylogo:hover{
-    transform:scale(1.2);
+    transform:scale(1.25);
 }
+
 a{
     color:white!important;
     text-decoration:none;
 }
+
 a:link{
     text-decoration: none!important;
     color:white;
@@ -97,6 +81,15 @@ a:link{
     height:0;
     z-index:0;
     transition: height 0.5s ease-in;
+
+}
+
+.navbar-icon-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+    gap:1vw;
 }
 
 .myvertical-navbar .mynavbar-item{
@@ -108,7 +101,7 @@ a:link{
 
 .myvertical-navbar .myicon{
     margin-bottom:3vw;
-    font-size: 6rem;
+    font-size: 5rem;
     margin-left:2%;
     color:white;
     text-decoration:none;
@@ -124,10 +117,15 @@ a:link{
     color:white;
 }
 
+.mynavbar-right-link:hover{
+    transform:scale(1.2);
+}
+
 #top-navbar-right{
     height:0;
     transition: height 0.5s ease-in;
 }
+
 @media only screen and (max-width: 1080px) {
     .mynavbar-right-link{
         transition:transform 0.2s ease-out;
@@ -152,4 +150,3 @@ a:link{
     }
 
 }
-  

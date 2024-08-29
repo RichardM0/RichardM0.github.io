@@ -27,3 +27,13 @@
 .footer-icon{
     color:black;
 }
+
+.email-link{
+    font-size:6rem;
+}
+
+@media (max-width:800px){
+    .email-link{
+        font-size:min(8vw,8vh);
+    }
+}
