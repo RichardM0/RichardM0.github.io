@@ -55,7 +55,7 @@ function navbarResize() {
         ec.innerText = "Extracurriculars";
         x.className = "mynavbar-sect mynavbar-right";
         x.style.height = "0";
-        x.style.marginTop = "10vh";
+        x.style.marginTop = "11vh";
         i.className = "fa fa-bars";
         c.style.display = "block";
         for(let i=0; i<items.length; i++){
