@@ -467,18 +467,6 @@ header{
     width:50%;
 }
 
-#resume-back{
-    /*background-image:url("../images/resumebackground.jpg");*/
-}
-
-#project-back{
-    /*background-image:url("../images/start_screen.png");*/
-}
-#coop-back{
-    /*background-image:url("../images/EduTDMain.png");*/
-    object-position:right;
-}
-
 .element-background{
     object-fit:cover;
     object-position:center;
