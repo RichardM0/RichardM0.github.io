@@ -1,6 +1,7 @@
-<DOCTYPE html>
+<DOCTYPE html></DOCTYPE>
     <html>
         <head>
+            <link rel="stylesheet" href="./styles/about.css">
             <link rel="stylesheet" href="./styles/index.css">
             <link rel="stylesheet" href="./styles/navbar.css">
             <link rel="stylesheet" href="./styles/footer.css">
@@ -16,13 +17,13 @@
         </head>
         <body>
             <header>
-                <nav class="my-navbar">
+                <nav id="index-nav" class="my-navbar">
                     <div class = "mynavbar-sect mynavbar-left">
                         <a href="index.html"><span class="mynavbar-item mylogo" id="RM-logo"> RM </span></a>
                     </div>
     
                     <div class = "mynavbar-sect mynavbar-right" id = "mytop-navbar-right">
-                        <a href="resume.html"><span class="mynavbar-item mynavbar-right-link"> Resume </span></a>
+                        <a href="about.html"><span class="mynavbar-item mynavbar-right-link"> About Me </span></a>
                         <a href="projects.html"><span class="mynavbar-item mynavbar-right-link"> Projects </span></a>
                         <a href="coop.html"><span class="mynavbar-item mynavbar-right-link"> COOP </span></a>
                         <a href="contests.html"><span class="mynavbar-item mynavbar-right-link"> Contests </span></a>
@@ -42,27 +43,39 @@
                     </div>
                 </nav>
             </header>
-            <main>              
+            <main>
+                
                 <div class="container mycontainer" style="margin:4%; width:92%;">
-                    <h1>My Resume</h1>
-                    <iframe id="pdf-viewer" class="pdf-viewer" src="resume.pdf" type="application/pdf"></iframe>
-                </div>
-            </main>
-            <footer class="myfooter">
-                <div class="communication-wrapper">
-                    <div class="communication-content">
-                        <h1 class="email-link">myemail@gmail.com</h1>
-                        <h3> References available upon request </h3>
-                        <div class="link-container">
-                            <a class="footer-link" href="https://www.instagram.com/richardmeeng" target="_blank">
-                                <i class="zoom-icon fab footer-icon fa-instagram"></i>
-                            </a>
-                            <a class="footer-link" href="https://www.github.com/RichardM0" target="_blank">
-                                <i class="zoom-icon fab footer-icon fa-github"></i>
-                            </a>
+                    <div id="about">                       
+                        <div class="row about-row animated" style="margin-top:3%;">
+                            <div class="about-image-container">
+                                <img class="about-image" src="images/fallRichard.jpg">
+                            </div>
+                            <div class="about-container">
+                                <h1 style="text-align:center;">Hi, I'm Richard Meng</h1>
+                                <div class="about-text-container">
+                                    <p class="information-paragraph-2">
+                                    I have always strived for grades over 98% ever since grade 9, which I have achieved. I am an excellent all-around student. Notable abilities I possess are organization, initiative, responsibility, and leadership.
+                                    </p>
+                                    <p class="information-paragraph-2">
+                                        Long-term persistence in self-study of mathematics and computer science developed strong self-learning and adaptability as well as strong time management skills, making learning and work very efficient.
+                                    </p>
+                                    <p class="information-paragraph-2">
+                                        Through COOP, I solved practical problems using knowledge, methods, skills and tools. I accumulated work experience in design, development and research. I have my own distinctive competitive advantages.
+                                    </p>
+                                </div>
+                                <h4 style="margin-bottom:2%;" class="myHeader2 animate display-2">My future career is digitalization and the integration of AI in finance </h4>
+                                <h4 style="margin:0" class="myHeader2 animate display-2">I hope that I can be a leader in the technology and management industry, as well as a contributor to schools, communities, and the world.</h4>               
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="row my-row">
+                        <div class="container resume-container">
+                            <h1>My Resume</h1>
+                            <iframe id="pdf-viewer" class="pdf-viewer" src="resume.pdf" type="application/pdf"></iframe>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </main>
         </body>
     </html>
